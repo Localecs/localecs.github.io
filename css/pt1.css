@@ -1,0 +1,244 @@
+/*
+* Modularizção do CSS
+* Parte 1 ----> Do header até ao fim do slide
+*/
+
+
+/*Reiniciar esse lixo*/
+*, h1, h2, h3, h4, h5, h6, p, strong, ul, nav{
+	margin: 0;
+	padding: 0;
+}
+
+/*Fonts*/
+@font-face{
+	src: url(../font/FjallaOne-Regular.ttf);
+	font-family: 'Fjalla One';
+}
+
+@font-face{
+	src: url(../font/segoeui.ttf);
+	font-family: 'segoeui';
+}
+
+/*Fim das Fonts*/
+body{
+	font-family: 'segoeui', sans-serif;
+}
+
+.parte-1-back, .parte-3-back{
+	width: 100%;
+	height: 550px;
+	padding: 50px 0 0 0;
+	background-image: url(../img/pi.jpg);
+	background-repeat: no-repeat;
+}
+
+.parte-3-back{
+	background-image: url(../img/work.jpg);
+}
+.wrap{
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.parte-1-back .wrap{
+	width: 1000px;
+	margin: 0 auto;
+}
+/*Cabeçalho*/
+header{
+	position:fixed;
+	z-index:9999;
+	width: 100%;
+	height: 73px;
+	background-color:#FFF;
+	box-shadow:1px 1px 2px #666;
+}
+.logo{
+	width: 220px;
+	height: 70px;
+	float: left;
+	cursor: pointer;
+}
+
+.logo img{
+	width:65px;
+	height:70px;
+	float:left;
+}
+
+.logo .logo_texto{
+	width:150px;
+	height:30px;
+	font-family: 'Fjalla One';
+	font-size:28px;
+	float:right;
+	margin:27px 0 0 0;
+}
+
+.nav{
+	float: right;
+	width: 412px;
+	height: 20px;
+	color: #EEA303;
+	font-family: 'Fjalla One';
+	font-size:20px;
+	text-transform:uppercase;
+	margin:25px 0 0 0;
+	/*text-shadow: 2px 1px 2px #333;*/
+}
+
+nav{
+	width: 410px;
+	margin: 4px auto;
+}
+
+nav ul li{
+	display: inline;
+	cursor: pointer;
+	margin: 0 10px 0 0;
+	padding: 0 3px 0 3px;
+	-webkit-transition: border-bottom 1s;
+	-mos-transition: border-bottom 1s;
+	-ms-transition: border-bottom 1s;
+	-o-transition: border-bottom 1s;
+	transition: border-bottom 1s;
+}
+nav ul li:hover{
+	border-bottom: 7px solid #EEA303;
+}
+/*Fim do cabeçalho*/
+
+/*Main Área*/
+.main{
+	width: 100%;
+	position: relative;
+	font-size: 18px;
+	float: right;
+	margin:100px 0 0 0 ;
+}
+.slide{
+	margin: 0 auto;
+	color: #FFF;
+	text-align: center;
+}
+.slide h2{
+	font-size: 60px;
+	font-family: 'Fjalla One';
+}
+/*Circulos nos slides:  grande, medio*/
+.DoisCirculos{
+	width: 421px;
+	height: 210px;
+	margin: 0 auto;
+	
+}
+.slide article .circulo{
+	width: 190px;
+	height: 190px;
+	margin: 0 auto;
+	cursor: pointer;
+}
+.slide article .circuloMedio{
+	height: 110px;
+	float: left;
+	margin:40px 0 0 0;
+	cursor: pointer;
+}
+
+/*Srpites background*/
+.backDevice{
+	background-image:url(../img/sprites.png);
+	background-repeat:no-repeat;
+}
+
+.phone{
+	width: 110px;
+	float:left;
+	background-size:375px 110px;
+	background-position: 15px 0px;
+}
+
+/*Fade-in do texto smartphone*/
+.phone:before{
+	content:"Smartphone";
+	position:absolute;
+	width:120px;
+	height:26px;
+	top:190px;
+	left:200px;
+	color:#EEA303;
+	border-radius:3px;
+	background-color:#FFF;
+	opacity:0;
+	-webkit-transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	-ms-transition: opacity 1s;
+	-o-transition: opacity 1s;
+	transition: opacity 1s;
+}
+
+.phone:hover:before{
+	opacity:1;
+}
+
+.pc{
+	float:left;
+	background-position: -145px 25px;
+}
+
+/*Fade-in do texto smartphone*/
+.pc:before{
+	content:"Desktop";
+	position:absolute;
+	width:80px;
+	height:26px;
+	top:168px;
+	left:455px;
+	color:#EEA303;
+	border-radius:3px;
+	background-color:#FFF;
+	opacity:1;
+	-webkit-transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	-ms-transition: opacity 1s;
+	-o-transition: opacity 1s;
+	transition: opacity 1s;
+}
+
+.pc:hover:before{
+	opacity:1;
+}
+
+
+.tablet{
+	width:115px;
+	background-position: -300px 0px;
+	background-size: 410px 110px;
+}
+
+/*Fade-in do texto smartphone*/
+.tablet:before{
+	content:"Tablet";
+	position:absolute;
+	width:70px;
+	height:26px;
+	top:185px;
+	left:650px;
+	color:#EEA303;
+	border-radius:3px;
+	background-color:#FFF;
+	opacity:0;
+	-webkit-transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	-ms-transition: opacity 1s;
+	-o-transition: opacity 1s;
+	transition: opacity 1s;
+}
+
+.tablet:hover:before{
+	opacity:1;
+}
+
+/*Fim do Main Área*/

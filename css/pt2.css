@@ -1,0 +1,132 @@
+/*
+* Modularizção do CSS
+* Parte 2 ----> Do formulário até ao footer
+*/
+
+
+/*Formulario de contacto*/
+.formContacto{
+	width:100%;
+	height:200px;
+	margin:20px 0 0 0;
+}
+
+.formLeft{
+	width:440px;
+}
+
+.formRight{
+	width:440px;
+	margin:0 0 0 20px;
+}
+
+/*Elementos do formulário*/
+.x_texto{
+	width:430px;
+	height:50px;
+	border:none;
+	color:#666;
+	text-decoration:italic;
+	font-size:20px;
+	padding:0 0 0 10px;
+	font-family: 'segoeui', sans-serif;
+}
+
+.x_texto:focus{
+	outline:0;
+}
+
+.x_textarea{
+	resize:none;	
+	width:430px;
+	height:193px;
+	border:none;
+	color:#EEA303;
+	font-size:20px;
+	padding:0 0 0 10px;
+	font-family: 'segoeui', sans-serif;
+}
+
+.x_textarea:focus{
+	outline:0;
+}
+
+.x_botao{
+	width:150px;
+	height:50px;
+	border:none;
+	cursor:pointer;
+	color:#EEA303;
+	font-size:20px;
+	background-color:#FFF;
+	font-family: 'segoeui', sans-serif;
+}
+
+.x_botao:active{
+	background-color:#EEE;
+}
+/*Fima da  parte quatro*/
+
+/*Rodape*/
+footer{
+	width:100%;
+	height:100px;
+	position: relative;
+	background-color:#000;
+}
+
+footer .wrap{
+	width: 930px;
+	margin: 0 auto;
+	position:relative;
+}
+
+footer .logoBottom{
+	width: 50px;
+	height: 55px;
+	position:absolute;
+	top:25px;
+	float:left;
+}
+
+footer .logoBottom:after{
+	content:"LOCAL ECS";
+	color: #333;
+	width: 75px;
+	height: 23px;
+	font-size: 20px;
+	font-family: 'Fjalla One', sans-serif;
+	position: absolute;
+	top: 20px;
+	left: 50px;
+	opacity: 0;
+	-webkit-transition: opacity 2s;
+	-moz-transition: opacity 2s;
+	-ms-transition: opacity 2s;
+	-o-transition: opacity 2s;
+	transition: opacity 2s;
+}
+
+footer .logoBottom:hover:after{
+	opacity: 1;
+}
+
+footer .info{
+	width:350px;
+	height:80px;
+	color: #666;
+	float: right;
+	margin:10px 0 0 0;
+	font-size:14px;
+	text-align:right;
+}
+
+footer .info a{
+	color: #666;
+}
+
+footer .info a:hover{
+	color:#EEA303;
+}
+
+/*Fim do rodape*/

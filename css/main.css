@@ -1,0 +1,86 @@
+
+
+/*Parte Dois*/
+.parte-2-back{
+	width: 100%;
+	background-color: #EEA303;
+	/*background-image: url(../img/work.jpg);
+	background-repeat: no-repeat;*/
+}
+.seg{
+	margin:0px auto;
+	width: 1000px;
+	height: 560px;
+}
+.seg div{
+	float: left;
+}
+.next{
+	width: 900px;
+	height: 520px;
+	text-align: justify;
+	margin: 0 0 0 60px;
+	color: #333;
+}
+.seg h3{
+	font-size:100px;
+	color:#000;
+	text-align:center;
+	font-family: 'Fjalla One', sans-serif;
+}
+.next article{
+	width:100%;
+	background-color:rgba(255,255,255,0.8);
+	font-size:26px;
+}
+
+p,h1{
+	margin: 20px;
+}
+.team{
+	width:100%;
+	height:150px;
+	margin:0 auto;
+	font-family:sans-serif;
+}
+.team .center{
+	width:150px;
+	margin:30px 0 0 0;
+	font-size:25px;
+}
+.team .center1{
+	margin:45px 0 0 0;
+}
+.TeamCircle1, .TeamCircle2, .TeamCircle3, .TeamCircle4{
+	width:150px;	
+	height:150px;
+	margin:0 13px 0 0;
+	text-align:center;
+	border-radius:75px;
+	background-color:#EEE;
+}
+.TeamCircle3{
+	margin:0;
+}
+.TeamCircle4{
+	margin:0 0 0 13px;
+}
+.CircleLeft{
+	width:330px;
+	float:left;
+}
+.CircleRight{
+	width:313px;
+	margin:0 0 0 254px;
+	float:right;
+}
+
+
+
+/*Fim da Parte Dois*/
+
+/*Part tres*/
+/*Fim da Part tres*/
+
+/*Parte quatro*/
+
