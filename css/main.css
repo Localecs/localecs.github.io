@@ -75,12 +75,6 @@ p,h1{
 	float:right;
 }
 
-
-
-/*Fim da Parte Dois*/
-
-/*Part tres*/
-/*Fim da Part tres*/
-
-/*Parte quatro*/
-
+b{
+	text-decoration: underline;
+}
